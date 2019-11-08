@@ -3,16 +3,18 @@ import {FlatList, Image, StyleSheet, TouchableOpacity, View} from 'react-native'
 import {actions} from './const';
 
 const defaultActions = [
-  actions.insertImage,
+  // actions.insertImage,
+  actions.heading2,
   actions.setBold,
   actions.setItalic,
   actions.insertBulletsList,
   actions.insertOrderedList,
-  actions.insertLink
+  // actions.insertLink
 ];
 
 function getDefaultIcon() {
   const texts = {};
+  texts[actions.heading2] = require('../img/icon_format_h2.png');
   texts[actions.insertImage] = require('../img/icon_format_media.png');
   texts[actions.setBold] = require('../img/icon_format_bold.png');
   texts[actions.setItalic] = require('../img/icon_format_italic.png');
